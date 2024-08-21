@@ -1,7 +1,35 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/helpers.scss";
+@import "./common/uikit.scss";
 
 /* BLOCKS */
+/* ALL PAGES */
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/address.scss";
+@import "./blocks/social-networks.scss";
+
+/* HOME PAGE */
+@import "./blocks/hero.scss";
+@import "./blocks/categories.scss";
+@import "./blocks/category.scss";
+@import "./blocks/about.scss";
+@import "./blocks/experience.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/compare-slider.scss";
+
+/* CATALOG PAGE */
+@import "./blocks/catalog.scss";
+@import "./blocks/product.scss";
+@import "./blocks/product-features.scss";
+@import "./blocks/show-all.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/subscribe.scss";

@@ -1,0 +1,59 @@
+.button {
+  &:focus-visible {
+    //
+  }
+
+  &:hover {
+    //
+  }
+
+  &:active {
+    //
+  }
+
+  &:disabled {
+    //
+  }
+
+  // .button--primary
+  &--primary {
+    //
+  }
+
+  // .button--secondary
+  &--secondary {
+    //
+  }
+}
+
+.link {
+  &:hover {
+    //
+  }
+
+  &:focus-visible {
+    //
+  }
+
+  &:active {
+    //
+  }
+}
+
+.input {
+  &:focus {
+    //
+  }
+
+  &:hover {
+    //
+  }
+
+  &:disabled {
+    //
+  }
+
+  &::placeholder {
+    //
+  }
+}

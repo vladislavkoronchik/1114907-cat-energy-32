@@ -1,1 +1,66 @@
-/* здесь используйте глобальные переменные */
+// COLOR PALETTE
+// Neutral colors
+$color-neutral-50: #ffffff;
+$color-neutral-100: #f2f2f2;
+$color-neutral-200: #ebebeb;
+$color-neutral-300: #e7e7e7;
+$color-neutral-400: #d9d9d9;
+$color-neutral-500: #cdcdcd;
+$color-neutral-600: #666666;
+$color-neutral-700: #444444;
+$color-neutral-800: #222222;
+$color-neutral-900: #111111;
+$color-neutral-950: #000000;
+
+// Accent colors
+$color-accent: #68b738;
+$color-accent-hight: #5eaa2f;
+
+// Feedback colors
+$color-success: #68b738;
+$color-error: #ff8282;
+$color-disabled: #bababa;
+
+// Surface colors
+$color-background: $color-neutral-50;
+$color-surface: $color-neutral-100;
+$color-container: $color-neutral-200;
+
+// Colors on surfaces
+$color-on-accent: $color-neutral-50;
+$color-on-surface: $color-neutral-700;
+$color-on-container: $color-neutral-800;
+
+// Text colors
+$color-text-primary: $color-neutral-950;
+$color-text-secondary: $color-neutral-700;
+$color-text-tertiary: $color-neutral-800;
+
+// Element colors
+$color-paragraph: $color-text-secondary;
+$color-title: $color-text-primary;
+$color-subtitle: $color-text-tertiary;
+$color-link: $color-text-primary;
+
+$color-button-primary: $color-accent;
+$color-button-primary-hover: $color-accent-hight;
+$color-button-seconady: $color-surface;
+$color-button-seconady-hover: $color-container;
+
+$color-label: $color-text-tertiary;
+$color-input: $color-neutral-300;
+$color-input-focus: $color-neutral-700;
+$color-input-hover: $color-neutral-500;
+
+$color-border: $color-neutral-500;
+$color-border-lower: $color-neutral-400;
+$color-slider-control: $color-neutral-600;
+
+// TYPOGRAPHY
+$ff-primary: "Oswald", sans-serif;
+$ff-secondary: "Lato", sans-serif;
+$fz-h1: 36px;
+$fz-h2: 24px;
+$fz-h3: 16px;
+$fz-basic: 14px;
+$fz-button: 16px;
