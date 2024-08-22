@@ -1,0 +1,33 @@
+.about {
+  // .about__container
+  &__container {
+    //
+  }
+  // .about__title
+  &__title {
+    //
+  }
+  // .about__list
+  &__list {
+    //
+  }
+  // .about__item
+  &__item {
+    // .about__item--useful-composition
+    &--useful-composition {
+      //
+    }
+    // .about__item--release-form
+    &--release-form {
+      //
+    }
+    // .about__item--how-to-apply
+    &--how-to-apply {
+      //
+    }
+    // .about__item--enjoy-result
+    &--enjoy-result {
+      //
+    }
+  }
+}

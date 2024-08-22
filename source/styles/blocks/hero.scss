@@ -1,0 +1,27 @@
+.hero {
+  color: $color-on-accent;
+  font-family: $ff-accent;
+  background-color: $color-accent-limpid;
+
+  // .hero__container
+  &__container {
+    //
+  }
+  // .hero__title
+  &__title {
+    color: $color-on-accent;
+  }
+  // .hero__slogan
+  &__slogan {
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  // .hero__image
+  &__image {
+    //
+  }
+  // .hero__button
+  &__button {
+    //
+  }
+}

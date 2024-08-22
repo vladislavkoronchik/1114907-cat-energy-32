@@ -1,0 +1,24 @@
+.footer {
+  color: $color-on-surface;
+  background-color: $color-surface;
+
+  // .footer__container
+  &__container {
+    //
+  }
+  // .footer__logo
+  &__logo {
+    //
+  }
+  // .footer__social
+  &__social {
+    //
+  }
+  // .footer__developers
+  &__developers {
+    color: inherit;
+    font-size: $fz-h3;
+    line-height: $lh-h3;
+    text-decoration: none;
+  }
+}

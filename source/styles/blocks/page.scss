@@ -1,0 +1,23 @@
+.page {
+  // .page__body
+  &__body {
+    //
+  }
+  // .page__title
+  &__title {
+    color: $color-title;
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: $fz-h1;
+    line-height: $lh-h1;
+  }
+
+  // .page__subtitle
+  &__subtitle {
+    color: $color-title;
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: $fz-h2;
+    line-height: $lh-h2;
+  }
+}

@@ -1,0 +1,28 @@
+.social-networks {
+  // .social-networks__list
+  &__list {
+    //
+  }
+  // .social-networks__item
+  &__item {
+    //
+  }
+  // .social-networks__link
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    // .social-networks__link--vkontakte
+    &--vkontakte {
+      //
+    }
+    // .social-networks__link--youtube
+    &--youtube {
+      //
+    }
+    // .social-networks__link--telegram
+    &--telegram {
+      //
+    }
+  }
+}

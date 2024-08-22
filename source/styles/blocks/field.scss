@@ -1,0 +1,24 @@
+.field {
+  color: inherit;
+  font-family: $ff-accent;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  border: 1px solid $color-border;
+
+  &:focus {
+    //
+  }
+
+  &:hover {
+    //
+  }
+
+  &:disabled {
+    //
+  }
+
+  &::placeholder {
+    //
+  }
+}
