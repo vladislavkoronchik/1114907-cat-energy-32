@@ -9,6 +9,13 @@
   }
   // .nav__link
   &__link {
+    color: $color-link;
+    font-family: $ff-accent;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+
     // .nav__link--current
     &--current {
       //

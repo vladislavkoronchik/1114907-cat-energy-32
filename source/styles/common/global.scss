@@ -6,6 +6,11 @@
 
 body {
   margin: 0;
+  font-family: $ff-basic;
+  font-size: $fz-basic;
+  line-height: $lh-basic;
+  color: $color-paragraph;
+  background-color: $color-background;
 }
 
 img {

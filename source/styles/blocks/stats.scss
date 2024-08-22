@@ -1,17 +1,34 @@
 .stats {
   // .stats__item
   &__item {
-    // .stats__item--expenses
-    &--expenses {
-      //
+    //
+  }
+  // .stats__item--expenses
+  &__item--expenses {
+    text-transform: uppercase;
+
+    .stats__term,
+    .stats__definition {
+      font-size: 14px;
+      line-height: 1.43;
+    }
+
+    .stats__term {
+      color: $color-title;
+      font-family: $ff-accent;
     }
   }
   // .stats__term
   &__term {
-    //
+    font-size: 12px;
+    line-height: 1;
   }
   // .stats__definition
   &__definition {
-    //
+    font-family: $ff-accent;
+    color: $color-title;
+    font-size: $fz-h2;
+    line-height: 1;
+    text-transform: uppercase;
   }
 }

@@ -5,7 +5,10 @@
   }
   // .subscribe__text
   &__text {
-    //
+    color: $color-title;
+    font-family: $ff-accent;
+    font-size: $fz-h3;
+    line-height: 1.5;
   }
   // .subscribe__form
   &__form {
@@ -17,6 +20,7 @@
   }
   // .subscribe__button
   &__button {
-    //
+    font-size: 20px;
+    line-height: 1.3;
   }
 }

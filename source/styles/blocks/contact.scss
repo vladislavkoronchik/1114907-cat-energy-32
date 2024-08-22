@@ -1,4 +1,7 @@
 .contact {
+  color: $color-on-surface;
+  background-color: $color-surface;
+
   // .contact__map
   &__map {
     //
@@ -13,10 +16,16 @@
   }
   // .contact__invitation
   &__invitation {
-    //
+    color: $color-title;
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: $fz-h3;
+    line-height: $lh-h3;
+    text-transform: uppercase;
   }
   // .contact__address
   &__address {
-    //
+    font-style: normal;
+    line-height: 1.43;
   }
 }

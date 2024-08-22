@@ -1,11 +1,18 @@
 .product {
   // .product--additional
   &--additional {
-    //
+    .product__title,
+    .product__features {
+      line-height: 1;
+    }
+
+    .product__features {
+      font-size: 14px;
+    }
   }
   // .product__link
   &__link {
-    //
+    text-decoration: none;
   }
   // .product__image
   &__image {
@@ -13,11 +20,17 @@
   }
   // .product__title
   &__title {
-    //
+    color: $color-subtitle;
+    font-family: $ff-accent;
+    font-weight: 400;
+    font-size: $fz-h3;
+    line-height: $lh-h3;
+    text-transform: uppercase;
   }
   // .product__features
   &__features {
-    //
+    font-size: 12px;
+    line-height: 1.33;
   }
   // .product__button
   &__button {

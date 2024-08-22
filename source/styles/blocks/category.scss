@@ -9,7 +9,12 @@
   }
   // .category__title
   &__title {
-    //
+    color: $color-title;
+    font-family: $ff-accent;
+    font-size: $fz-h2;
+    font-weight: 400;
+    line-height: 1.54;
+    text-transform: uppercase;
   }
   // .category__description
   &__description {

@@ -1,0 +1,10 @@
+.special-offer {
+  color: $color-on-accent;
+  background-color: $color-accent-limpid;
+
+  // .special-offer__text
+  &__text {
+    font-size: $fz-h3;
+    line-height: $lh-h3;
+  }
+}
