@@ -15,8 +15,12 @@
     <header class="header">
       <div class="header__container container">
         <a class="header__logo logo" href="index.html">
-          <img class="logo__icon" src="#" width="33" height="38" alt="Логотип-иконка Кэт энерджи.">
-          <img class="logo__text" src="#" width="101" height="18" alt="Текстовый логотип Кэт энерджи.">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-icon-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-icon-tablet.svg">
+            <img class="logo__icon" src="images/logo-icon-mobile.svg" width="33" height="38" alt="Логотип-иконка Кэт энерджи.">
+          </picture>
+          <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Кэт энерджи.">
         </a>
 
         <button class="header__toggle toggle-nav" type="button">
@@ -364,7 +368,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <a class="footer__logo logo" href="index.html">
-          <img class="logo__text" src="#" width="128" height="24" alt="Текстовый логотип Кэт энерджи.">
+          <img class="logo__text" src="images/logo-text.svg" width="128" height="24" alt="Текстовый логотип Кэт энерджи.">
         </a>
 
         <section class="footer__social social-networks">

@@ -20,5 +20,26 @@
     font-size: $fz-h3;
     line-height: $lh-h3;
     text-decoration: none;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 34px;
+      background-color: $color-neutral-600;
+      mask-image: url("../../icons/icon-brand-htmlacademy.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: 100% 100%;
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+      background-color: $color-accent;
+    }
+
+    &:active {
+      filter: opacity(30%);
+    }
   }
 }
