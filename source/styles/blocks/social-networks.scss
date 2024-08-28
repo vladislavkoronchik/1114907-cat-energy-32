@@ -12,17 +12,38 @@
     color: inherit;
     text-decoration: none;
 
+    &::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 22px;
+      background-color: $color-neutral-600;
+      mask-image: var(--icon);
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: 100%;
+    }
+
     // .social-networks__link--vkontakte
     &--vkontakte {
-      //
+      --icon: url("../../icons/stack.svg#icon-social-vkontakte");
     }
     // .social-networks__link--youtube
     &--youtube {
-      //
+      --icon: url("../../icons/stack.svg#icon-social-youtube");
     }
     // .social-networks__link--telegram
     &--telegram {
-      //
+      --icon: url("../../icons/stack.svg#icon-social-telegram");
+    }
+
+    &:hover::before,
+    &:focus-visible::before {
+      background-color: $color-accent;
+    }
+
+    &:active::before {
+      filter: opacity(30%);
     }
   }
 }

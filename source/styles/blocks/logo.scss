@@ -1,6 +1,15 @@
 .logo {
   text-decoration: none;
 
+  &:hover,
+  &:focus-visible {
+    filter: opacity(80%);
+  }
+
+  &:active {
+    filter: opacity(60%);
+  }
+
   // .logo__icon
   &__icon {
     //
