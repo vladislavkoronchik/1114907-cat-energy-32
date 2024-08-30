@@ -115,24 +115,23 @@
               <dd class="stats__definition">15 000 РУБ.</dd>
             </div>
           </dl>
-          <div class="experience__slider compare-slider">
-            <div class="compare-slider__wrapper">
-              <div class="compare-slider__slide compare-slider__slide--before">
-                <picture>
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
-                  <img class="compare-slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до приёма Cat Energy Slim.">
-                </picture>
-              </div>
-              <div class="compare-slider__slide compare-slider__slide--after">
-                <picture>
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
-                  <img class="compare-slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот после приёма Cat Energy Slim.">
-                </picture>
-              </div>
-              <button class="compare-slider__control" type="button">
-                <span class="visually-hidden">Сравнить котов</span>
-              </button>
+          <div class="experience__slider compare-slider" style="--dynamic-column-width: 50%;">
+            <div class="compare-slider__slide compare-slider__slide--before">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+                <img class="compare-slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до приёма Cat Energy Slim.">
+              </picture>
             </div>
+            <div class="compare-slider__slide compare-slider__slide--after">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <img class="compare-slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот после приёма Cat Energy Slim.">
+              </picture>
+            </div>
+            <label class="compare-slider__label" for="slider-toggle">
+              <span class="visually-hidden">Сравнить котов</span>
+            </label>
+            <input class="compare-slider__range" type="range" min="0" max="280" step="1" value="140" name="slider-toggle" id="slider-toggle">
           </div>
         </div>
       </section>
