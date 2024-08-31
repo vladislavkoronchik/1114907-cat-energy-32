@@ -47,3 +47,13 @@ class CompareSlider {
 }
 
 new CompareSlider();
+
+const navToggle = document.querySelector('.toggle-nav');
+const nav = document.querySelector('.nav');
+
+nav?.classList.remove('_nojs');
+
+navToggle?.addEventListener('click', function() {
+  this.classList.toggle('active');
+  nav.classList.toggle('active');
+});

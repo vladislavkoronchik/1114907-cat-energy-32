@@ -1,6 +1,16 @@
 .logo {
   text-decoration: none;
 
+  &[aria-current="page"] {
+    // pointer-events: none;
+  }
+
+  @include tablet() {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+  }
+
   &:hover,
   &:focus-visible {
     filter: opacity(80%);
@@ -10,12 +20,28 @@
     filter: opacity(60%);
   }
 
+  picture {
+    width: fit-content;
+  }
+
   // .logo__icon
   &__icon {
-    //
+    position: relative;
+    display: block;
+    z-index: 1;
   }
   // .logo__text
   &__text {
-    //
+    display: block;
+    width: 101px;
+    height: 18px;
+    z-index: 1;
+    max-width: unset;
+    justify-self: center;
+
+    @include desktop() {
+      width: 118px;
+      height: 24px;
+    }
   }
 }
