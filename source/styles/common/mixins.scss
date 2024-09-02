@@ -7,3 +7,15 @@
     font-display: swap;
   }
 }
+
+@mixin tablet() {
+  @media (min-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

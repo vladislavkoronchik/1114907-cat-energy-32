@@ -1,3 +1,19 @@
 .container {
-  //
+  --security-indent: 20px;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--security-indent);
+
+  @include tablet() {
+    --security-indent: 30px;
+    --max-width: #{$max-width-tablet};
+
+    max-width: calc(var(--max-width) + 2 * var(--security-indent));
+  }
+
+  @include desktop() {
+    --security-indent: 50px;
+    --max-width: #{$max-width-desktop};
+  }
 }
