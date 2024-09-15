@@ -1,31 +1,94 @@
 .contact {
+  --content-width: 565px;
+  --container-width: 1220px;
+
   color: $color-on-surface;
   background-color: $color-surface;
 
+  @include desktop() {
+    display: grid;
+    grid-template-rows: 95px min-content 106px;
+    grid-template-columns: 1fr minmax(min-content, var(--container-width)) 1fr;
+  }
+
   // .contact__map
   &__map {
-    //
+    height: 362px;
+    overflow: hidden;
+
+    @include tablet() {
+      height: 400px;
+    }
+
+    @include desktop() {
+      grid-row: 1 / -1;
+      grid-column: 1 / -1;
+    }
   }
+
   // .contact__map-image
   &__map-image {
-    //
+    width: 100%;
   }
+
   // .contact__content
   &__content {
-    //
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 20px;
+    background-color: $color-background;
+
+    @include tablet() {
+      padding: 60px calc(40px + 30px);
+    }
+
+    @include desktop() {
+      grid-template-columns: minmax(min-content, 163px) minmax(min-content, 157px);
+      align-items: center;
+      column-gap: 87px;
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      justify-self: start;
+      padding: 60px 78px 60px 80px;
+      z-index: 1;
+    }
   }
   // .contact__invitation
   &__invitation {
+    max-width: 140px;
     color: $color-title;
     font-family: $ff-accent;
     font-weight: 400;
     font-size: $fz-h3;
     line-height: $lh-h3;
     text-transform: uppercase;
+
+    @include tablet() {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+
+    @include desktop() {
+      max-width: 163px;
+    }
   }
   // .contact__address
   &__address {
+    max-width: 140px;
     font-style: normal;
     line-height: 1.43;
+
+    @include tablet() {
+      max-width: 157px;
+      justify-self: end;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    @include desktop() {
+      justify-self: start;
+    }
   }
 }

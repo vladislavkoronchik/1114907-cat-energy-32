@@ -1,10 +1,27 @@
 .address {
+  @include tablet() {
+    text-align: right;
+  }
+
+  @include desktop() {
+    text-align: left;
+  }
+
   // .address__street
   &__street {
-    //
+    margin: 0;
+
+    @include tablet() {
+      margin-bottom: 20px;
+    }
+
+    @include desktop() {
+      margin-bottom: 19px;
+    }
   }
+
   // .address__city
   &__city {
-    //
+    margin: 0;
   }
 }
