@@ -1,20 +1,105 @@
 .show-all {
+  --icon-size: 30px;
+
+  display: grid;
+  grid-template-areas:
+    "show-all-icon"
+    "show-all-title"
+    "show-all-text"
+    "show-all-button";
+  grid-template-rows: var(--icon-size) repeat(3, min-content);
+  place-items: start center;
+  padding: 25px 20px 24px;
+  row-gap: 8px;
+  text-align: center;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    grid-area: show-all-icon;
+    width: var(--icon-size);
+    height: 2px;
+    background-color: $color-border;
+    place-self: center center;
+  }
+
+  &::after {
+    width: 2px;
+    height: var(--icon-size);
+  }
+
+  @include tablet() {
+    --icon-size: 60px;
+
+    padding: 49px 35px 39px;
+    row-gap: 23px;
+    align-items: center;
+    border: 1px solid $color-border;
+  }
+
+  @include desktop() {
+    row-gap: 26px;
+    padding: 49px 38px 39px;
+  }
+
   // .show-all__title
   &__title {
+    grid-area: show-all-title;
     color: $color-subtitle-variant;
     font-family: $ff-accent;
     font-weight: 400;
     font-size: $fz-h3;
     line-height: $lh-h3;
     text-transform: uppercase;
+    margin: 0;
+    margin-top: 15px;
+
+    @include tablet() {
+      padding: 0 40px;
+      margin-top: 27px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    @include desktop() {
+      padding: 0;
+      margin-top: 14px;
+    }
   }
   // .show-all__text
   &__text {
+    grid-area: show-all-text;
     font-size: 12px;
     line-height: 1.33;
+    margin: 0;
+
+    @include tablet() {
+      padding: 0 40px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    @include desktop() {
+      padding: 0;
+    }
   }
   // .show-all__button
   &__button {
-    //
+    grid-area: show-all-button;
+    justify-self: stretch;
+    text-align: center;
+    margin-top: 13px;
+    padding: 10px 30px;
+
+    @include tablet() {
+      margin-top: 59px;
+    }
+
+    @include desktop() {
+      margin-top: 64px;
+    }
   }
 }
