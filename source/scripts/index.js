@@ -48,12 +48,26 @@ class CompareSlider {
 
 new CompareSlider();
 
-const navToggle = document.querySelector('.toggle-nav');
-const nav = document.querySelector('.nav');
+function toggleNav() {
+  const navToggle = document.querySelector('.toggle-nav');
+  const nav = document.querySelector('.nav');
 
-nav?.classList.remove('_nojs');
+  if (!nav) {
+    return;
+  }
 
-navToggle?.addEventListener('click', function() {
-  this.classList.toggle('active');
-  nav.classList.toggle('active');
-});
+  nav.setAttribute('style', 'transition: unset');
+  nav.firstElementChild.setAttribute('style', 'transition: unset');
+  nav.classList.remove('_nojs');
+  setTimeout(() => {
+    nav.removeAttribute('style');
+    nav.firstElementChild.removeAttribute('style');
+  }, 300);
+
+  navToggle?.addEventListener('click', function() {
+    this.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+}
+
+toggleNav();
