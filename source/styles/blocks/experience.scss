@@ -1,22 +1,100 @@
 .experience {
+  background-color: $color-surface;
+  padding: 25px 0 40px;
+
+  @include tablet() {
+    background-image: linear-gradient(0deg, $color-surface 50%, $color-background 50%);
+    padding: 0 0 57px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      margin-bottom: 45px;
+    }
+  }
+
+  @include desktop() {
+    background-image: linear-gradient(0deg, $color-surface calc(100% - 136px), $color-background calc(100% - 136px));
+    padding: 0 0 75px;
+
+    &::before {
+      display: none;
+    }
+  }
+
   // .experience__container
   &__container {
-    //
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 32px;
+    justify-content: space-between;
+
+    @include tablet() {
+      gap: 55px 0;
+    }
+
+    @include desktop() {
+      grid-template-columns: 436px 1fr;
+      gap: 69px 0;
+    }
   }
   // .experience__title
   &__title {
-    //
+    grid-column: 1 / -1;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include tablet() {
+      margin-bottom: 0;
+    }
+
+    @include desktop() {
+      margin-bottom: 7px;
+      grid-row: 1 / 2;
+    }
   }
   // .experience__description
   &__description {
-    //
+    grid-column: 1 / -1;
+    margin: 0;
+
+    @include tablet() {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-top: 5px;
+    }
+
+    @include desktop() {
+      margin-top: 70px;
+      grid-column: 1 / 2;
+    }
   }
   // .experience__stats
   &__stats {
-    //
+    grid-column: 1 / -1;
+    margin: 0;
+
+    @include desktop() {
+      grid-column: 1 / 2;
+    }
   }
   // .experience__slider
   &__slider {
-    //
+    grid-column: 1 / -1;
+    justify-self: center;
+
+    @include tablet() {
+      margin: 44px 0;
+    }
+
+    @include desktop() {
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      justify-self: end;
+      margin: 1px 0;
+    }
   }
 }

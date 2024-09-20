@@ -10,6 +10,25 @@
     font-weight: 400;
     font-size: $fz-h1;
     line-height: $lh-h1;
+
+    @include tablet() {
+      font-size: 60px;
+      line-height: 1;
+    }
+  }
+
+  // .page__title--catalog
+  &__title--catalog {
+    line-height: 1;
+    margin: 27px auto 40px;
+
+    @include tablet() {
+      margin: 40px auto 84px;
+    }
+
+    @include desktop() {
+      margin: 74px auto 84px;
+    }
   }
 
   // .page__subtitle
@@ -19,5 +38,70 @@
     font-weight: 400;
     font-size: $fz-h2;
     line-height: $lh-h2;
+
+    @include tablet() {
+      font-size: 32px;
+    }
+
+    @include desktop() {
+      font-size: 40px;
+    }
+  }
+
+  // .page__main
+  &__main {
+    //
+  }
+
+  // .page__hero
+  &__hero {
+    margin-bottom: 20px;
+
+    @include tablet() {
+      margin-bottom: 0;
+    }
+
+    @include desktop() {
+      margin-bottom: 82px;
+    }
+  }
+
+  // .page__categories
+  &__categories {
+    margin: 20px 0;
+
+    @include tablet() {
+      margin: 0;
+    }
+
+    @include desktop() {
+      margin: 71px 0;
+    }
+  }
+
+  // .page__about
+  &__about {
+    margin: 20px 0;
+
+    @include tablet() {
+      margin: 45px 0;
+    }
+
+    @include desktop() {
+      margin: 69px 0;
+    }
+  }
+
+  // .page__experience
+  &__experience {
+    margin-top: 49px;
+
+    @include tablet() {
+      margin-top: 47px;
+    }
+
+    @include desktop() {
+      margin-top: 69px;
+    }
   }
 }

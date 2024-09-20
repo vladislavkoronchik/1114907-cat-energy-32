@@ -1,18 +1,63 @@
 .header {
+  background-color: $color-background;
+  padding: 13px 0 14px;
+
+  @include mobileonly() {
+    &:has(._nojs) {
+      padding-bottom: 0;
+    }
+
+    &--inner {
+      border-bottom: 1px solid $color-border;
+    }
+  }
+
+  @include tablet() {
+    padding: 25px 0;
+  }
+
+  @include desktop() {
+    background-color: transparent;
+    padding: 55px 0 0;
+  }
+
   // .header__container
   &__container {
-    //
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+
+    @include tablet() {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
   }
   // .header__logo
   &__logo {
-    //
+    display: contents;
   }
   // .header__toggle
   &__toggle {
-    //
+    z-index: 1;
+    justify-self: end;
+    margin: 0 1px 2px 0;
+
+    &.active {
+      //
+    }
   }
   // .header__nav
   &__nav {
-    //
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    @include tablet() {
+      position: static;
+    }
   }
 }

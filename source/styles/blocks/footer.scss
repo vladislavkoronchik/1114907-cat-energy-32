@@ -1,25 +1,70 @@
 .footer {
+  --py: 20px;
+
   color: $color-on-surface;
   background-color: $color-surface;
+  text-align: center;
+  padding: 20px 0;
+
+  @include tablet() {
+    --py: 0;
+
+    padding: 55px 0;
+  }
+
+  @include desktop() {
+    padding: 66px 0;
+  }
 
   // .footer__container
   &__container {
-    //
+    display: flex;
+    flex-direction: column;
+
+    @include tablet() {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+    }
   }
   // .footer__logo
   &__logo {
-    //
+    display: flex;
+    justify-content: center;
+    padding: calc(var(--py) - 0px) 0 calc(var(--py) - 1px);
+    border-bottom: 1px solid $color-border;
+
+    img {
+      width: 128px;
+      height: 24px;
+    }
+
+    @include tablet() {
+      justify-content: flex-start;
+      border-bottom: 0;
+      width: fit-content;
+    }
   }
   // .footer__social
   &__social {
-    //
+    padding: calc(var(--py) - 0px) 0 calc(var(--py) - 1px);
+    border-bottom: 1px solid $color-border;
+
+    @include tablet() {
+      border-bottom: 0;
+    }
   }
   // .footer__developers
   &__developers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: inherit;
     font-size: $fz-h3;
     line-height: $lh-h3;
     text-decoration: none;
+    padding: var(--py) 0;
 
     &::after {
       content: "";
@@ -40,6 +85,11 @@
 
     &:active {
       filter: opacity(30%);
+    }
+
+    @include tablet() {
+      justify-self: flex-end;
+      gap: 23px;
     }
   }
 }

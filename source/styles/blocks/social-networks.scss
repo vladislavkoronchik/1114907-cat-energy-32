@@ -1,7 +1,17 @@
 .social-networks {
+  @include tablet() {
+    padding: 8px 0 7px;
+  }
+
   // .social-networks__list
   &__list {
-    //
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   // .social-networks__item
   &__item {
