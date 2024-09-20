@@ -94,7 +94,7 @@
 
     @include desktop() {
       --content-indent: 80px;
-      --image-indent: 123px;
+      --image-indent: 122px;
 
       // grid-template-columns: 80px 367px 47px 505px 1fr; // 6.56% 30.08% 3.85% 41.39% 1fr
       grid-template-columns: repeat(4, 245px);
