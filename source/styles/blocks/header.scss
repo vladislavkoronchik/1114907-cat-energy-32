@@ -6,6 +6,10 @@
     &:has(._nojs) {
       padding-bottom: 0;
     }
+
+    &--inner {
+      border-bottom: 1px solid $color-border;
+    }
   }
 
   @include tablet() {
