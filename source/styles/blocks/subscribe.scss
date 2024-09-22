@@ -19,7 +19,6 @@
 
   // .subscribe__title
   &__title {
-    margin: 0;
     margin-bottom: 8px;
     align-self: start;
 
@@ -68,7 +67,6 @@
     flex-basis: 100%;
     font-size: 20px;
     line-height: 1.5;
-    padding: 12px 13px;
 
     @include tablet() {
       flex-basis: auto;

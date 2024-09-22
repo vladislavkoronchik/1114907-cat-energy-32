@@ -27,15 +27,13 @@
   }
   // .additional-products__title
   &__title {
-    margin: 0;
-
     @include tablet() {
       grid-column: 1 / -1;
       margin-bottom: 10px;
     }
 
     @include desktop() {
-      margin: 0;
+      margin-bottom: 0;
     }
   }
   // .additional-products__list
