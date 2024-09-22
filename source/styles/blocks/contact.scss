@@ -74,6 +74,7 @@
 
     @include tablet() {
       padding: 60px calc(40px + 30px);
+      background-color: $color-background;
     }
 
     @include desktop() {
@@ -84,7 +85,6 @@
       grid-column: 2 / 3;
       justify-self: start;
       padding: 60px 78px 60px 80px;
-      background-color: $color-background;
       z-index: 1;
     }
   }
