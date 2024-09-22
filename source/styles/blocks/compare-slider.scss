@@ -114,14 +114,28 @@
     appearance: none;
     margin: 0;
     cursor: grab;
+    opacity: 0;
 
-    &::-webkit-slider-runnable-track,
+    // Нельзя комбинировать следующие селекторы в одном правиле.
+    // Если браузер находит один селектор, который он не распознает, то игнорирует все остальные.
+    &::-webkit-slider-runnable-track {
+      background-color: transparent;
+      appearance: none;
+    }
+
     &::-moz-range-track {
       background-color: transparent;
       appearance: none;
     }
 
-    &::-webkit-slider-thumb,
+    &::-webkit-slider-thumb {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: 0;
+      appearance: none;
+    }
+
     &::-moz-range-thumb {
       width: 40px;
       height: 40px;
