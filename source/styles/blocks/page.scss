@@ -10,6 +10,7 @@
     font-weight: 400;
     font-size: $fz-h1;
     line-height: $lh-h1;
+    margin: 0;
 
     @include tablet() {
       font-size: 60px;
@@ -33,18 +34,50 @@
 
   // .page__subtitle
   &__subtitle {
+    --fz: #{$fz-h2};
+    --lh: #{$lh-h2};
+
     color: $color-title;
     font-family: $ff-accent;
     font-weight: 400;
-    font-size: $fz-h2;
-    line-height: $lh-h2;
+    font-size: var(--fz);
+    line-height: var(--lh);
+    margin: 0;
+
+    &--extra-line {
+      --line-indent: 40px;
+      --line-pos-y: calc(var(--fz) * var(--lh) / 2 - 2px);
+
+      position: relative;
+      width: fit-content;
+      background-color: $color-background;
+      box-shadow:
+        var(--line-indent) 0 0 $color-background,
+        calc(-1 * var(--line-indent)) 0 0 $color-background;
+    }
+
+    &--extra-line::before {
+      content: "";
+      position: absolute;
+      top: var(--line-pos-y);
+      right: 0;
+      width: 100vw;
+      height: 2px;
+      background-color: $color-accent;
+      box-shadow: 100vw 0 0 $color-accent;
+      z-index: -1;
+    }
 
     @include tablet() {
-      font-size: 32px;
+      --fz: 32px;
+
+      margin-left: var(--line-indent);
     }
 
     @include desktop() {
-      font-size: 40px;
+      --fz: 40px;
+
+      margin-left: 0;
     }
   }
 
