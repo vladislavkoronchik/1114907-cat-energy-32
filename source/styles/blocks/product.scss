@@ -96,10 +96,7 @@
     object-fit: scale-down;
     margin: 0 auto;
   }
-  // .product__characteristic
-  &__characteristic {
-    //
-  }
+
   // .product__description
   &__description {
     margin: 0;
@@ -116,10 +113,6 @@
 
   &--title {
     grid-area: product-title;
-  }
-
-  @include tablet() {
-    //
   }
 
   @include desktop() {

@@ -41,6 +41,7 @@
       gap: 69px 0;
     }
   }
+
   // .experience__title
   &__title {
     grid-column: 1 / -1;
@@ -56,6 +57,7 @@
       grid-row: 1 / 2;
     }
   }
+
   // .experience__description
   &__description {
     grid-column: 1 / -1;
@@ -72,6 +74,7 @@
       grid-column: 1 / 2;
     }
   }
+
   // .experience__stats
   &__stats {
     grid-column: 1 / -1;
@@ -81,6 +84,7 @@
       grid-column: 1 / 2;
     }
   }
+
   // .experience__slider
   &__slider {
     grid-column: 1 / -1;

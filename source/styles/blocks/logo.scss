@@ -1,10 +1,6 @@
 .logo {
   text-decoration: none;
 
-  &[aria-current="page"] {
-    // pointer-events: none;
-  }
-
   @include tablet() {
     display: flex;
     align-items: center;
@@ -30,6 +26,7 @@
     display: block;
     z-index: 1;
   }
+
   // .logo__text
   &__text {
     display: block;
