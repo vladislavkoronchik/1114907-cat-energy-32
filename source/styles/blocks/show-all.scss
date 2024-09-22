@@ -34,15 +34,15 @@
   @include tablet() {
     --icon-size: 60px;
 
-    padding: 49px 35px 39px;
+    padding: 48px 35px 38px;
     row-gap: 23px;
     align-items: center;
-    border: 1px solid $color-border;
+    border: 2px solid $color-surface;
   }
 
   @include desktop() {
     row-gap: 26px;
-    padding: 49px 38px 39px;
+    padding: 48px 36px 38px;
   }
 
   // .show-all__title

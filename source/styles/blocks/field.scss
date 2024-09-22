@@ -5,20 +5,10 @@
   line-height: 1.5;
   text-transform: uppercase;
   border: 1px solid $color-border;
+  padding: 12px;
 
   &:focus {
-    //
-  }
-
-  &:hover {
-    //
-  }
-
-  &:disabled {
-    //
-  }
-
-  &::placeholder {
-    //
+    border: 2px solid $color-title;
+    padding: 11px;
   }
 }

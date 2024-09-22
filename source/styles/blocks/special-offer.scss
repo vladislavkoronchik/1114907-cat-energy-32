@@ -1,4 +1,12 @@
 .special-offer {
+  --gift-bg:
+    image-set(
+      url("../../images/gift-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/gift-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/gift-background-mobile@1x.png") type("image/png") 1x,
+      url("../../images/gift-background-mobile@2x.png") type("image/png") 2x
+    );
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,6 +16,10 @@
   text-align: center;
   color: $color-on-accent;
   background-color: $color-accent-limpid;
+  background-image: linear-gradient($color-accent-limpid, $color-accent-limpid), var(--gift-bg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center bottom;
+  background-size: contain, cover;
 
   // .special-offer::before
   &::before {
@@ -23,6 +35,14 @@
   }
 
   @include tablet() {
+    --gift-bg:
+      image-set(
+        url("../../images/gift-background-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/gift-background-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/gift-background-tablet@1x.png") type("image/png") 1x,
+        url("../../images/gift-background-tablet@2x.png") type("image/png") 2x
+      );
+
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-items: center;
@@ -30,6 +50,7 @@
     margin-left: 1px;
     padding: 22px 10px 20px 20px;
     gap: 90px;
+    background-position: center center, 1px -304px;
 
     &::before {
       width: 78px;
@@ -38,6 +59,14 @@
   }
 
   @include desktop() {
+    --gift-bg:
+      image-set(
+        url("../../images/gift-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/gift-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/gift-background-desktop@1x.png") type("image/png") 1x,
+        url("../../images/gift-background-desktop@2x.png") type("image/png") 2x
+      );
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,6 +75,7 @@
     padding: 56px 38px 43px;
     transform: translate(1px, 1px);
     margin-left: 0;
+    background-position: center center, right center;
 
     &::before {
       width: 78px;

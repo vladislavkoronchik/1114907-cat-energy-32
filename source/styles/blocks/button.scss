@@ -9,31 +9,38 @@
   border: none;
   cursor: pointer;
 
-  &:focus-visible {
-    //
-  }
-
-  &:hover {
-    //
-  }
-
-  &:active {
-    //
-  }
-
-  &:disabled {
-    //
-  }
-
   // .button--primary
   &--primary {
     background-color: $color-accent;
     color: $color-on-accent;
+
+    &:focus-visible,
+    &:hover {
+      background-color: $color-accent-hight;
+    }
+
+    &:active {
+      color: color-mix(in sRGB, $color-on-accent 30%, transparent);
+    }
   }
 
   // .button--secondary
   &--secondary {
     background-color: $color-surface;
     color: $color-on-surface;
+
+    &:focus-visible,
+    &:hover {
+      background-color: $color-button-seconady-hover;
+    }
+
+    &:active {
+      color: color-mix(in sRGB, $color-on-surface 30%, transparent);
+    }
+  }
+
+  &:disabled {
+    filter: opacity(30%);
+    pointer-events: none;
   }
 }
