@@ -1,7 +1,7 @@
 .container {
   --security-indent: 20px;
 
-  width: 100%;
+  width: $max-width-mobile;
   margin: 0 auto;
   padding: 0 var(--security-indent);
 

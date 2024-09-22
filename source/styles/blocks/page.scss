@@ -1,8 +1,4 @@
 .page {
-  // .page__body
-  &__body {
-    //
-  }
   // .page__title
   &__title {
     color: $color-title;
@@ -79,11 +75,6 @@
 
       margin-left: 0;
     }
-  }
-
-  // .page__main
-  &__main {
-    //
   }
 
   // .page__hero

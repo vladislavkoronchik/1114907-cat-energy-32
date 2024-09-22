@@ -25,6 +25,7 @@
       align-items: start;
     }
   }
+
   // .additional-products__title
   &__title {
     @include tablet() {
@@ -36,6 +37,7 @@
       margin-bottom: 0;
     }
   }
+
   // .additional-products__list
   &__list {
     margin: 0;
@@ -52,6 +54,7 @@
       grid-template-columns: minmax(min-content, calc(245px + 60px)) auto min-content minmax(min-content, 265px);
     }
   }
+
   // .additional-products__item
   &__item {
     @include desktop() {
@@ -60,6 +63,7 @@
       grid-column: 1 / -1;
     }
   }
+
   // .additional-products__banner
   &__banner {
     @include tablet() {

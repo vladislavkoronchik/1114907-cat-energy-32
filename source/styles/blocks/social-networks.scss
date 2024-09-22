@@ -13,10 +13,7 @@
     padding: 0;
     list-style: none;
   }
-  // .social-networks__item
-  &__item {
-    //
-  }
+
   // .social-networks__link
   &__link {
     color: inherit;
@@ -38,10 +35,12 @@
     &--vkontakte {
       --icon: url("../../icons/stack.svg#icon-social-vkontakte");
     }
+
     // .social-networks__link--youtube
     &--youtube {
       --icon: url("../../icons/stack.svg#icon-social-youtube");
     }
+
     // .social-networks__link--telegram
     &--telegram {
       --icon: url("../../icons/stack.svg#icon-social-telegram");

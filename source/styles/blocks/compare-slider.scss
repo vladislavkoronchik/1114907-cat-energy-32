@@ -53,12 +53,10 @@
 
   // .compare-slider__slide
   &__slide {
-    // .compare-slider__slide--before img
     &--before img {
       object-position: left center;
     }
 
-    // .compare-slider__slide--after img
     &--after img {
       object-position: right center;
     }

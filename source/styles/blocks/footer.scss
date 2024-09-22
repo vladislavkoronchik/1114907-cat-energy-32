@@ -28,11 +28,12 @@
       column-gap: 20px;
     }
   }
+
   // .footer__logo
   &__logo {
     display: flex;
     justify-content: center;
-    padding: calc(var(--py) - 0px) 0 calc(var(--py) - 1px);
+    padding: var(--py) 0 calc(var(--py) - 1px);
     border-bottom: 1px solid $color-border;
 
     img {
@@ -46,15 +47,17 @@
       width: fit-content;
     }
   }
+
   // .footer__social
   &__social {
-    padding: calc(var(--py) - 0px) 0 calc(var(--py) - 1px);
+    padding: var(--py) 0 calc(var(--py) - 1px);
     border-bottom: 1px solid $color-border;
 
     @include tablet() {
       border-bottom: 0;
     }
   }
+
   // .footer__developers
   &__developers {
     display: flex;

@@ -107,7 +107,6 @@
   }
 }
 
-// .stats__term
 .stats__term {
   max-width: calc(78% - 2 * 8px);
   width: fit-content;
@@ -133,7 +132,7 @@
     background-color: $color-surface;
   }
 }
-// .stats__definition
+
 .stats__definition {
   grid-column: 1 / -1;
   grid-row: 1 / 3;
