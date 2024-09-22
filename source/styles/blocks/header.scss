@@ -5,6 +5,10 @@
   @include mobileonly() {
     &:has(._nojs) {
       padding-bottom: 0;
+
+      .header__toggle {
+        display: none;
+      }
     }
 
     &--inner {
