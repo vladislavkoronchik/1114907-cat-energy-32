@@ -51,7 +51,8 @@
     @include desktop() {
       grid-column: 1 / 4;
       display: grid;
-      grid-template-columns: minmax(min-content, calc(245px + 60px)) auto min-content minmax(min-content, 265px);
+      grid-template-columns: minmax(min-content, 285px) auto min-content 245px;
+      column-gap: 40px;
     }
   }
 
