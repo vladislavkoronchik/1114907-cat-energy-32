@@ -6,22 +6,20 @@
   @include desktop() {
     text-align: left;
   }
+}
 
-  // .address__street
-  &__street {
-    margin: 0;
+.address__street {
+  margin: 0;
 
-    @include tablet() {
-      margin-bottom: 20px;
-    }
-
-    @include desktop() {
-      margin-bottom: 19px;
-    }
+  @include tablet() {
+    margin-bottom: 20px;
   }
 
-  // .address__city
-  &__city {
-    margin: 0;
+  @include desktop() {
+    margin-bottom: 19px;
   }
+}
+
+.address__city {
+  margin: 0;
 }

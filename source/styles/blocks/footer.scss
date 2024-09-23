@@ -15,84 +15,80 @@
   @include desktop() {
     padding: 66px 0;
   }
+}
 
-  // .footer__container
-  &__container {
-    display: flex;
-    flex-direction: column;
+.footer__container {
+  display: flex;
+  flex-direction: column;
 
-    @include tablet() {
-      display: grid;
-      justify-content: space-between;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 20px;
-    }
-  }
-
-  // .footer__logo
-  &__logo {
-    display: flex;
-    justify-content: center;
-    padding: var(--py) 0 calc(var(--py) - 1px);
-    border-bottom: 1px solid $color-border;
-
-    img {
-      width: 128px;
-      height: 24px;
-    }
-
-    @include tablet() {
-      justify-content: flex-start;
-      border-bottom: 0;
-      width: fit-content;
-    }
-  }
-
-  // .footer__social
-  &__social {
-    padding: var(--py) 0 calc(var(--py) - 1px);
-    border-bottom: 1px solid $color-border;
-
-    @include tablet() {
-      border-bottom: 0;
-    }
-  }
-
-  // .footer__developers
-  &__developers {
-    display: flex;
+  @include tablet() {
+    display: grid;
     justify-content: space-between;
-    align-items: center;
-    color: inherit;
-    font-size: $fz-h3;
-    line-height: $lh-h3;
-    text-decoration: none;
-    padding: var(--py) 0;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+}
 
-    &::after {
-      content: "";
-      display: block;
-      width: 27px;
-      height: 34px;
-      background-color: $color-neutral-600;
-      mask-image: url("../../icons/icon-brand-htmlacademy.svg");
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-size: 100% 100%;
-    }
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  padding: var(--py) 0 calc(var(--py) - 1px);
+  border-bottom: 1px solid $color-border;
 
-    &:hover::after,
-    &:focus-visible::after {
-      background-color: $color-accent;
-    }
+  img {
+    width: 128px;
+    height: 24px;
+  }
 
-    &:active {
-      filter: opacity(30%);
-    }
+  @include tablet() {
+    justify-content: flex-start;
+    border-bottom: 0;
+    width: fit-content;
+  }
+}
 
-    @include tablet() {
-      justify-self: flex-end;
-      gap: 23px;
-    }
+.footer__social {
+  padding: var(--py) 0 calc(var(--py) - 1px);
+  border-bottom: 1px solid $color-border;
+
+  @include tablet() {
+    border-bottom: 0;
+  }
+}
+
+.footer__developers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  font-size: $fz-h3;
+  line-height: $lh-h3;
+  text-decoration: none;
+  padding: var(--py) 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-color: $color-neutral-600;
+    mask-image: url("../../icons/icon-brand-htmlacademy.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100% 100%;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $color-accent;
+  }
+
+  &:active {
+    filter: opacity(30%);
+  }
+
+  @include tablet() {
+    justify-self: flex-end;
+    gap: 23px;
   }
 }

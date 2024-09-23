@@ -21,7 +21,6 @@
   background-position: center center, center bottom;
   background-size: contain, cover;
 
-  // .special-offer::before
   &::before {
     content: "";
     display: block;
@@ -83,20 +82,19 @@
       transform: translateY(-2px);
     }
   }
+}
 
-  // .special-offer__text
-  &__text {
-    font-size: $fz-h3;
-    line-height: $lh-h3;
-    margin: 0;
+.special-offer__text {
+  font-size: $fz-h3;
+  line-height: $lh-h3;
+  margin: 0;
 
-    @include tablet() {
-      max-width: 161px;
-      text-align: left;
-    }
+  @include tablet() {
+    max-width: 161px;
+    text-align: left;
+  }
 
-    @include desktop() {
-      text-align: center;
-    }
+  @include desktop() {
+    text-align: center;
   }
 }

@@ -44,64 +44,61 @@
     row-gap: 26px;
     padding: 48px 36px 38px;
   }
+}
 
-  // .show-all__title
-  &__title {
-    grid-area: show-all-title;
-    color: $color-subtitle-variant;
-    font-family: $ff-accent;
-    font-weight: 400;
-    font-size: $fz-h3;
-    line-height: $lh-h3;
-    text-transform: uppercase;
-    margin: 0;
-    margin-top: 15px;
+.show-all__title {
+  grid-area: show-all-title;
+  color: $color-subtitle-variant;
+  font-family: $ff-accent;
+  font-weight: 400;
+  font-size: $fz-h3;
+  line-height: $lh-h3;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 15px;
 
-    @include tablet() {
-      padding: 0 40px;
-      margin-top: 27px;
-      font-size: 20px;
-      line-height: 1.2;
-    }
-
-    @include desktop() {
-      padding: 0;
-      margin-top: 14px;
-    }
+  @include tablet() {
+    padding: 0 40px;
+    margin-top: 27px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
-  // .show-all__text
-  &__text {
-    grid-area: show-all-text;
-    font-size: 12px;
-    line-height: 1.33;
-    margin: 0;
+  @include desktop() {
+    padding: 0;
+    margin-top: 14px;
+  }
+}
 
-    @include tablet() {
-      padding: 0 40px;
-      font-size: 16px;
-      line-height: 18px;
-    }
+.show-all__text {
+  grid-area: show-all-text;
+  font-size: 12px;
+  line-height: 1.33;
+  margin: 0;
 
-    @include desktop() {
-      padding: 0;
-    }
+  @include tablet() {
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
-  // .show-all__button
-  &__button {
-    grid-area: show-all-button;
-    justify-self: stretch;
-    text-align: center;
-    margin-top: 13px;
-    padding: 10px 30px;
+  @include desktop() {
+    padding: 0;
+  }
+}
 
-    @include tablet() {
-      margin-top: 59px;
-    }
+.show-all__button {
+  grid-area: show-all-button;
+  justify-self: stretch;
+  text-align: center;
+  margin-top: 13px;
+  padding: 10px 30px;
 
-    @include desktop() {
-      margin-top: 64px;
-    }
+  @include tablet() {
+    margin-top: 59px;
+  }
+
+  @include desktop() {
+    margin-top: 64px;
   }
 }
