@@ -2,57 +2,52 @@
   @include tablet() {
     padding: 8px 0 7px;
   }
+}
 
-  // .social-networks__list
-  &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.social-networks__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-networks__link {
+  color: inherit;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: $color-neutral-600;
+    mask-image: var(--icon);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100%;
   }
 
-  // .social-networks__link
-  &__link {
-    color: inherit;
-    text-decoration: none;
+  &--vkontakte {
+    --icon: url("../../icons/stack.svg#icon-social-vkontakte");
+  }
 
-    &::before {
-      content: "";
-      display: block;
-      width: 28px;
-      height: 22px;
-      background-color: $color-neutral-600;
-      mask-image: var(--icon);
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-size: 100%;
-    }
+  &--youtube {
+    --icon: url("../../icons/stack.svg#icon-social-youtube");
+  }
 
-    // .social-networks__link--vkontakte
-    &--vkontakte {
-      --icon: url("../../icons/stack.svg#icon-social-vkontakte");
-    }
+  &--telegram {
+    --icon: url("../../icons/stack.svg#icon-social-telegram");
+  }
 
-    // .social-networks__link--youtube
-    &--youtube {
-      --icon: url("../../icons/stack.svg#icon-social-youtube");
-    }
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: $color-accent;
+  }
 
-    // .social-networks__link--telegram
-    &--telegram {
-      --icon: url("../../icons/stack.svg#icon-social-telegram");
-    }
-
-    &:hover::before,
-    &:focus-visible::before {
-      background-color: $color-accent;
-    }
-
-    &:active::before {
-      filter: opacity(30%);
-    }
+  &:active::before {
+    filter: opacity(30%);
   }
 }

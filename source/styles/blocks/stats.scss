@@ -76,20 +76,13 @@
       margin-left: 2px;
     }
 
-    &--expenses .stats__term {
-      //
-    }
-
     &--expenses .stats__definition {
       justify-self: end;
     }
   }
 
   @include desktop() {
-    // max-width: 162px;
-
     &--expenses {
-      // max-width: unset;
       grid-template-columns: 9fr 5fr;
       grid-column: 1 / -1;
       row-gap: 0;
@@ -99,10 +92,6 @@
     &--expenses .stats__term,
     &--expenses .stats__definition {
       justify-self: start;
-    }
-
-    &--expenses .stats__definition {
-      //
     }
   }
 }

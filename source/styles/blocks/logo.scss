@@ -19,26 +19,24 @@
   picture {
     width: fit-content;
   }
+}
 
-  // .logo__icon
-  &__icon {
-    position: relative;
-    display: block;
-    z-index: 1;
-  }
+.logo__icon {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
 
-  // .logo__text
-  &__text {
-    display: block;
-    width: 101px;
-    height: 18px;
-    z-index: 1;
-    max-width: unset;
-    justify-self: center;
+.logo__text {
+  display: block;
+  width: 101px;
+  height: 18px;
+  z-index: 1;
+  max-width: unset;
+  justify-self: center;
 
-    @include desktop() {
-      width: 118px;
-      height: 24px;
-    }
+  @include desktop() {
+    width: 118px;
+    height: 24px;
   }
 }

@@ -8,72 +8,67 @@
   @include desktop() {
     padding: 71px 0 0;
   }
+}
 
-  // .additional-products__container
-  &__container {
+.additional-products__container {
+  display: grid;
+  row-gap: 35px;
+
+  @include tablet() {
+    grid-template-columns: repeat(4, minmax(18.64%, 1fr));
+    gap: 70px 60px;
+  }
+
+  @include desktop() {
+    grid-template-columns: repeat(4, minmax(20.08%, 1fr));
+    gap: 79px 80px;
+    align-items: start;
+  }
+}
+
+.additional-products__title {
+  @include tablet() {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+  }
+
+  @include desktop() {
+    margin-bottom: 0;
+  }
+}
+
+.additional-products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include tablet() {
+    grid-column: 1 / -1;
+  }
+
+  @include desktop() {
+    grid-column: 1 / 4;
     display: grid;
-    row-gap: 35px;
+    grid-template-columns: minmax(min-content, 285px) auto min-content 245px;
+    column-gap: 40px;
+  }
+}
 
-    @include tablet() {
-      grid-template-columns: repeat(4, minmax(18.64%, 1fr)); // 132px
-      gap: 70px 60px;
-    }
+.additional-products__item {
+  @include desktop() {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+}
 
-    @include desktop() {
-      grid-template-columns: repeat(4, minmax(20.08%, 1fr)); // 245px
-      gap: 79px 80px;
-      align-items: start;
-    }
+.additional-products__banner {
+  @include tablet() {
+    grid-column: 1 / -1;
   }
 
-  // .additional-products__title
-  &__title {
-    @include tablet() {
-      grid-column: 1 / -1;
-      margin-bottom: 10px;
-    }
-
-    @include desktop() {
-      margin-bottom: 0;
-    }
-  }
-
-  // .additional-products__list
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    @include tablet() {
-      grid-column: 1 / -1;
-    }
-
-    @include desktop() {
-      grid-column: 1 / 4;
-      display: grid;
-      grid-template-columns: minmax(min-content, 285px) auto min-content 245px;
-      column-gap: 40px;
-    }
-  }
-
-  // .additional-products__item
-  &__item {
-    @include desktop() {
-      display: grid;
-      grid-template-columns: subgrid;
-      grid-column: 1 / -1;
-    }
-  }
-
-  // .additional-products__banner
-  &__banner {
-    @include tablet() {
-      grid-column: 1 / -1;
-    }
-
-    @include desktop() {
-      grid-column: 4 / 5;
-      align-self: start;
-    }
+  @include desktop() {
+    grid-column: 4 / 5;
+    align-self: start;
   }
 }
